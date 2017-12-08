@@ -4,7 +4,7 @@ var word = " ";
 var words = ["bro","mountain","cameroon","nigeria","football","california"];
 var guesses = 10;
 var guessedLetters = [];
-
+//
 function startGame(){
     word = words[Math.floor(Math.random() * words.length)];
     printWord();
