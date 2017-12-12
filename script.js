@@ -22,7 +22,7 @@ function printWord(){
         document.getElementById("guess").innerHTML = retWord;
     return retWord;
 }
-
+//
 function guessLetter(){
 var letter = document.getElementById("guessBox").value;
     guessedLetters.push(letter);
