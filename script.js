@@ -4,7 +4,8 @@ var word = " ";
 var words = ["bro","mountain","cameroon","nigeria","football","california"];
 var guesses = 10;
 var guessedLetters = [];
-//
+
+
 function startGame(){
     word = words[Math.floor(Math.random() * words.length)];
     printWord();
@@ -14,19 +15,21 @@ function printWord(){
     var retWord = " ";
     for(var i = 0; i < word.length; i++) {
         if (guessedLetters.indexOf(word[i]) === -1) {
-            retWord += "_";
+            retWord += "_ ";
         } else {
             retWord += word[i]
         }
+
     }
-        document.getElementById("guess").innerHTML = retWord;
-    return retWord;
+    console.log(retWord);
+    document.getElementById("board").innerHTML = retWord;
 }
-//
+
 function guessLetter(){
 var letter = document.getElementById("guessBox").value;
     guessedLetters.push(letter);
     printWord();
 }
+
 
 

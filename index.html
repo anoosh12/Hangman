@@ -3,9 +3,10 @@
 <head>
     <link rel="stylesheet" href="styles.css"/>
     <script src="script.js"></script>
-
 </head>
 <body>
+<h1>Hangman Game </h1>
+<p>Take a Guess!</p>
     <button id="myButton" onclick="startGame()">Start Game</button>
     <button id="Button" onclick="guessLetter()">Guess</button>
 
@@ -36,14 +37,9 @@
         <option value="x">x</option>
         <option value="y">y</option>
         <option value="z">z</option>
-
     </select>
-    <center>
 
-    <h1>Hangman Game</h1>
-    <p>Take a Guess!</p>
-    <div id="retWord"></div>
+    <div id="board"></div>
 
-</center>
 </body>
 </html>
