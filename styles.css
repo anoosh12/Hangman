@@ -3,12 +3,15 @@ body {
     font-family: sans-serif;
     vertical-align: top;
     text-align: center;
-    background-color: white;
+    background-color: orange;
+}
 #guessBox {
-    width:100px;
+    font-size: large;
+    width: 50px;
+    height: 35px;
+    background-color: blue;
+    color: white;
 }
-}
-
 button {
     background-color: blue;
     border: dodgerblue;
