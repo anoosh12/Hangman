@@ -1,6 +1,6 @@
 var word = " ";
 var words = ["mountain","cameroon","california"];
-var guesses = 8;
+var guesses = 10;
 var guessedLetters = [ ];
 
 
@@ -21,7 +21,7 @@ function guessLetter(){
         guessedLetters.push(letter);
         var underscoreWord = printWord();
         if(underscoreWord.indexOf("_") === -1){
-            win += "You Win!";
+            win += "YOU WIN!";
         }
         document.getElementById("winner").innerHTML = win;
         lowerGuesses(letter);
